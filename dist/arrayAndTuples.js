@@ -1,4 +1,4 @@
 "use strict";
 // const players : string[] = ["messi", "ronaldo"];
-players.push("neymar");
-console.log(players);
+// players.push("neymar");
+// console.log(players);

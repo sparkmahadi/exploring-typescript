@@ -1,12 +1,5 @@
 "use strict";
-var myName = "sojib";
-var arr = ["sojib"];
-var players;
-players = ["Messi", "Ronaldo", 3456, true, "Hello"];
-var add = function (num1, num2, num3) {
-    if (num3 === void 0) { num3 = 0; }
-    return (num1 + num2 + (num3 || 0));
-};
+// type MyName = 'sojib' | 'saiful';
 var person = {
     name: 'John',
     email: 'john@example.com',
@@ -25,6 +18,15 @@ var person = {
             type: 'player',
             value: 'Messi'
         },
-    ]
+    ],
+    isLoggedIn: true,
 };
 // console.log(person);
+// typeof person.phone === "string" || person.phone.map((val)=> console.log(val));
+// not proper solution
+if (Array.isArray(person.phone)) {
+    person.phone.map(function (val) { return val.toLowerCase(); });
+}
+else {
+    person.phone.toLowerCase();
+}
